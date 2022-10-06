@@ -10,7 +10,7 @@ Remove this line and tell us how the code was tested.
 ## Checklist:
 Before you create this PR, confirm all the requirements listed below by checking the checkboxes `[x]`:
 
--   [ ] Have you followed the [Contribution Guidelines](https://github.com/siddhi-244/Bhaviktutorials/Adorn)while contributing.
+-   [ ] Have you followed the [Contribution Guidelines](https://github.com/Bhaviktutorials/Adorn/blob/main/Contributing.md)while contributing.
 -   [ ] Have you checked there aren't other open [Pull Requests](https://github.com/Bhaviktutorials/Adorn/pulls) for the same update/change?
 -   [ ] Have you made corresponding changes to the documentation?
 -   [ ] Have you tested the code before submission?
