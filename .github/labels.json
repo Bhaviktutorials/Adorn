@@ -1,0 +1,27 @@
+[
+  {
+    "name": "good first issue",
+    "description": "This issue is good for first timers",
+    "color": "658699"
+  },
+  {
+    "name": "🆘 help wanted",
+    "description": "This issue needs help ! Please help if possible !",
+    "color": "00ff00"
+  },
+  {
+    "name": " Hacktoberfest'21 ",
+    "description": "This issue will be considered for Hacktoberfest 2021",
+    "color": "d9a60b"
+  },
+  {
+    "name" : "spam",
+    "description" : "This pr will be considered as spam",
+    "color" : "008844"
+   },
+  {
+    "name": " 🤩 Up for Grab ",
+    "description": "This issue is not assigned ! Grab It !",
+    "color": "4000ff"
+  }
+]
