@@ -2,7 +2,8 @@
 # About Adorn -
 <div align="center" >
 
-![Adron logo](https://user-images.githubusercontent.com/64035221/194388605-42192a3b-2199-42ea-8fd0-330ae17b864e.png)
+<img src="https://user-images.githubusercontent.com/64035221/194388605-42192a3b-2199-42ea-8fd0-330ae17b864e.png" alt="Adron Logo" width="500"/>
+
 ![Stars](https://img.shields.io/github/stars/Bhaviktutorials/Adorn?style=social)
 ![Forks](https://img.shields.io/github/forks/Bhaviktutorials/Adorn?style=social)    
 [![GitHub PRs](https://img.shields.io/github/issues-pr/Bhaviktutorials/Adorn?style=flat&logo=github)](https://github.com/Bhaviktutorials/Adorn/pulls)
