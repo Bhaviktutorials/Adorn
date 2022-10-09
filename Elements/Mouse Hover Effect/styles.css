@@ -1,0 +1,130 @@
+:root {
+  --gap: 4px;
+  --background-page: #111;
+  --background-container: #333;
+  --background-box: #222;
+  --color-line: #666;
+  --color-font: #444;
+  --columns: 3;
+  --border-radius: 3px;
+  --font-size: 18px;
+  --font-family: Arial;
+  --transition-duration: 600ms;
+  --transition-style: ease-in-out;
+  --container-max-width: 640px;
+}
+body {
+  background: var(--background-page);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--color-font);
+}
+p.warning {
+  text-align: center;
+  line-height: 2;
+  margin: 0 auto;
+  font-size: 14px;
+  max-width: var(--container-max-width);
+  color: #fff;
+}
+p.warning a {
+    background: #45ba04;
+    color: #fff;
+    padding: .2rem .7rem;
+    border-radius: 3px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+p.warning a.more:hover {
+      background: #3bacff;
+}
+.container {
+  background: var(--background-container);
+  box-shadow: 0 0 16px rgba(0,0,0,1);
+  border-radius: var(--border-radius);
+  margin: 2em auto;
+  max-width: var(--container-max-width);
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between; /* Horizontal spacing between the entries. */
+  padding: var(--gap) var(--gap) calc(var(--gap)/2) var(--gap); /* The external spacing of the container. */
+  overflow: hidden; /* Prevents .corner::before to be visible outside the margins of the container. */
+}
+.entry {
+  width: calc((100% / var(--columns)) - calc(var(--gap)/2)); /* Column width must take into account the desired gap. */
+  margin-bottom: calc(var(--gap)/2); /* Vertical spacing between the entries. */
+  position: relative; /* This is required, to contain .corner::before within the margins of it's parent. */
+}
+.entry-content {
+  display: grid;
+  place-items: center;
+  min-height: clamp( 1em, calc(100vw/var(--columns)), calc(var(--container-max-width)/var(--columns)) );
+  background: var(--background-box);
+  transition: all var(--transition-duration) var(--transition-style);
+  pointer-events: none; /* When hovering over an entry, ignore this element, even if its on the foreground. */
+  z-index: 1; /* The content div should have a higher z-index than the .corner::before. */ 
+  position: relative; /* z-index would have no effect without a specific position. */
+}
+.entry:hover .entry-content {
+  background: var(--background-container);
+  color: var(--color-line);
+}
+.corner-container { /* The corner container should cover the entire entry. */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.corner { /* Each corner should cover 1/4 of an entry. */
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+.corner::before { /* The cross shape is just a big box positioned behind the entries. */
+  content: '';
+  display: block;
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transition: opacity var(--transition-duration) var(--transition-style);
+  background: radial-gradient(var(--color-line) 0, transparent 70%); /* Radial gradient smoothens the shape's edges. */
+  pointer-events: none; /* This is needed to prevent hovering on the ::before element instead of its container span. */
+}
+.corner:hover::before {
+  opacity: 1;
+}
+/* Position the corners and their respective shapes. */
+.corner:nth-child(1) {
+  left: 0;
+  top: 0;
+}
+.corner:nth-child(1)::before {
+  left: -100%;
+  top: -100%;
+}
+.corner:nth-child(2) {
+  right: 0;
+  top: 0;
+}
+.corner:nth-child(2)::before {
+  right: -100%;
+  top: -100%;
+}
+.corner:nth-child(3) {
+  left: 0;
+  bottom: 0;
+}
+.corner:nth-child(3)::before {
+  left: -100%;
+  bottom: -100%;
+}
+.corner:nth-child(4) {
+  right: 0;
+  bottom: 0;
+}
+.corner:nth-child(4)::before {
+  right: -100%;
+  bottom: -100%;
+}
