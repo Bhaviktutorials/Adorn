@@ -1,0 +1,51 @@
+body{
+    background-color: #030e4f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.list li{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+
+}
+
+.list li a{
+    color: white;
+    text-decoration: none;
+}
+
+.list li a:hover{
+    color: #f49f1c;
+    fill: #f49f1c;
+    outline: #E0F7FA;
+    transform: scale(1.5);
+    transition: 0.3s;
+}
+.list li a:active{
+    color: white;
+    color: white;
+    transform: translateY(4px);
+    box-shadow: 0 4px #666;
+}
+
+
+
+
+
