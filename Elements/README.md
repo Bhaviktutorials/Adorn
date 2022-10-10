@@ -11,10 +11,6 @@
 
 - [Single div CSS moon’s haunted](Single%20div%20CSS%20moon’s%20haunted)
 
+- [Navigation Button Styling](Navigation%20Button%20Styling)
 
-
-- [Navigation Button Styling](Navigation-Button-Styling)
-
-
-
-- [Animated Social Media Icons](Animated-Social)
+- [Animated Social Media Icons](Animated%20Social)
