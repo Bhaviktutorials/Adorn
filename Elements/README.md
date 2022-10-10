@@ -10,3 +10,5 @@
 - [Mouse Hover Effect](Mouse-Hover-Effect)
 
 - [Single div CSS moon’s haunted](Single-div-CSS-moon’s-haunted)
+
+- [Navigation Button Styling](Navigation-Button-Styling)
