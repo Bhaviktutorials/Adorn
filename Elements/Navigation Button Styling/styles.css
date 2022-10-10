@@ -1,0 +1,42 @@
+body{
+    background-color: #030e4f;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase; 
+    text-align: center; 
+}
+h1,
+.list a:hover
+{
+    color: #f49f1c;
+}
+h1{
+    font-size: 2rem;
+}
+.list{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+}
+.list li{
+    display: flex; 
+    list-style: none;
+    padding: 2rem 3rem;
+}
+.list li a{
+    color: white;
+    text-decoration: none;
+}
+.list li a:hover{
+    transform: scale(1.5);
+    transition: 0.4s;
+}
+.list li a:active{
+    color: white; 
+    transition: 0.05s;
+    transform: translateY(4px);
+    box-shadow: 0 4px #666;
+}
+
+
+
+
