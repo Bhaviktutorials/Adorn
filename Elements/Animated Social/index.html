@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>icons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<style>
+    body {
+        background-color: #111827;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .social-icons li {
+        margin: 0 10px;
+    }
+
+    .social-icons li a {
+        font-size: 30px;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        position: relative;
+        transition: 0.2s ease;
+    }
+
+    .social-icons li a:hover {
+        background-image: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-size: 40px;
+    }
+
+    .social-icons li a::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+        transform: scale(1);
+        transition: 0.5s ease-in-out;
+    }
+
+    .social-icons li a:hover::before {
+        transform: scale(0);
+    }
+
+
+    img {
+        border: 2px solid gray;
+        border-radius: 100px;
+        background-color: black;
+        color: cyan;
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+
+    }
+
+    img:hover {
+        background-color: rgb(59, 59, 69);
+        border-radius: 3px;
+        font-size: 30px;
+    }
+</style>
+
+<body>
+    <ul class="social-icons">
+        <li>
+            <a href="https://www.instagram.com/its.yash_parwal" target="_blank"><i class="fab"><img style="width: 40px; height: 40px;" src="insta.jpg"></i></a>
+        </li>
+        <li>
+            <a href="https://www.twitter.com/YashParwal1" target="_blank"><i class="fab"><img
+                style="width: 40px; height: 40px; " src="twitter.png"></i></a>
+        </li>
+        <li>
+            <a href="https://in.linkedin.com/in/yash-parwal-0571211a1" target="_blank"><i class="fab"><img style="width: 40px; height: 40px; " src="lin.png"></i></a>
+        </li>
+        <li>
+            <a href="https://www.github.com/Yashparwal1" target="_blank"><i class="fab"><img style="width: 40px; height: 40px; " src="git.png"></i></a>
+        </li>
+    </ul>
+
+</body>
+
+</html>
