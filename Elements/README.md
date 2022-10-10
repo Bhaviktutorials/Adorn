@@ -13,4 +13,4 @@
 
 - [Navigation Button Styling](Navigation-Button-Styling)
 
-- [Animated Social Media Icons](Animated%20Social)
+- [Animated Social Media Icons](Animated-Social)
