@@ -4,7 +4,7 @@
 
 - [Loader](Loader)
 
-  - [Infinite Loading Animation](Loader/Infinite-Loading-Animation)
+  - [Infinite Loading Animation](Loader/Infinite%20Loading%20Animation)
   - [Awesome loading screen animation](Loader/Awesome%20loading%20screen%20animation)
   
 - [Mouse Hover Effect](Mouse-Hover-Effect)
