@@ -6,19 +6,19 @@
 ## Demo: 
 
 Initial State
-![](img/initial.png)
+![Initial State Screenshot](img/initial.png)
 
 Hover State
-![alt text](img/hover.png)  
+![Hover State Screenshot](img/hover.png)  
 
 Active State (when button is clicked)
-![alt text](img/active.png)  
+![Active State Screenshot](img/active.png)  
 
 Return State (after letting go of click)
-![alt text](img/hover.png)  
+![Return State Screenshot](img/hover.png)  
 
 Final State (moving cursor off)
-![alt text](img/initial.png)
+![Final State Screenshot](img/initial.png)
 
 
 ## In this specific example, it includes the following features:  

@@ -1,9 +1,7 @@
 body{
     background-color: #030e4f;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
+    text-transform: uppercase; 
     text-align: center; 
 }
 h1,
@@ -15,12 +13,12 @@ h1{
     font-size: 2rem;
 }
 .list{
-    display: flex;
+    display: flex; 
     flex-direction: row;
     justify-content: center;
 }
 .list li{
-    display: flex;
+    display: flex; 
     list-style: none;
     padding: 2rem 3rem;
 }
@@ -29,14 +27,11 @@ h1{
     text-decoration: none;
 }
 .list li a:hover{
-    fill: #f49f1c;
-    outline: #E0F7FA;
     transform: scale(1.5);
     transition: 0.4s;
 }
 .list li a:active{
-    color: white;
-    color: white;
+    color: white; 
     transition: 0.05s;
     transform: translateY(4px);
     box-shadow: 0 4px #666;
