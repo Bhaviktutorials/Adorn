@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight-Text-Fill</title>
+    <style>
+        body {
+        background-color: #111827;
+        /* color: white; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        h2{
+            position: relative;
+            font-size: 5rem;
+            font-family: sans-serif;
+            -webkit-text-stroke: 0.3vw #383d52;
+            text-transform: uppercase;
+            animation: colours 2s linear infinite;
+        }
+        h2::before{
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            /* color: #ff0000; */
+            background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);        
+            -webkit-text-stroke: 0vw #383d52;
+            border-right: 2px solid #ff0000;
+            overflow: hidden;
+            animation: animate 6s linear infinite;
+        }
+        /* highlighting text effect */
+        @keyframes animate{
+            0%{width: 0;}
+            70%{width: 100%;}
+        }
+        /* text colour changing effect */
+        @keyframes colours {
+            0%{color: #ff8c00;}
+            10%{color: #fff200;}
+            30%{color: #51ff00;}
+            50%{color: #00ff91;}
+            70%{color: #00ddff;}
+            90%{color: #0008ff;}
+            100%{color: #ff00f2;}
+        }
+    </style>
+</head>
+<body>
+    <h2 data-text="Highlighting_text_effect">Highlighting_text_effect</h2>
+</body>
+</html>
