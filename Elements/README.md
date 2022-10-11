@@ -13,4 +13,10 @@
 
 - [Navigation Button Styling](Navigation%20Button%20Styling)
 
+
+
+
+- [Animated Highlighting Text-Fill](Highlight%20Text%20Fill)
+
 - [Animated Social Media Icons](Animated%20Social)
+
