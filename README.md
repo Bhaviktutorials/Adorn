@@ -33,16 +33,7 @@
 -   Always **update the table of contents** in the parent folder where the new **component** is added.
 -   Whether you are adding an animation or a design component or any other code, make sure to include all the **additional scripts and CDN's** within the **file/ folder itself and with addequate documentation** as required. The code must be extremely simple to understand such that it is ready for **immediate use in some project.**
 -   Make sure to follow the **[Code of Conduct](https://github.com/Bhaviktutorials/Adorn/blob/main/CODE_OF_CONDUCT.md)** and be **respectful** towards others while contributing to the project.
--   Add details about your **component** in the JSON file as mentioned.
-    [componentData.json](https://github.com/Bhaviktutorials/Adorn/blob/main/embellish-website/js/componentData.json)
-```
-    {
-    "category": "Accordion",
-    "componentName": "Skewed Images",
-    "componentURL": "URL",
-    "preview": "/HTML+CSS+JS/Accordion/Skewed%20Images/index.html"
-    }
-```
+
 
 
 <hr/>
