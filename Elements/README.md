@@ -20,3 +20,5 @@
 
 - [Animated Social Media Icons](Animated%20Social)
 
+- [CSS3 Loading animations](CSS3%20Loading%20animations)
+
