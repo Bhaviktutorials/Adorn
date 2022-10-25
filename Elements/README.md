@@ -13,8 +13,9 @@
 
 - [Navigation Button Styling](Navigation%20Button%20Styling)
 
+- [HTML & CSS Login Form](Login%Form/HTML%&%CSS%Login%Form)
 
-- [Simple CSS Wave](simple%CSS%Wave)
+- [Simple CSS Wave](Simple%CSS%wave)
 
 - [Animated Highlighting Text-Fill](Highlight%20Text%20Fill)
 
