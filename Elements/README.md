@@ -15,7 +15,7 @@
 
 - [HTML & CSS Login Form](Login%20Form/HTML%20%26%20CSS%20Login%20Form)
 
-- [Simple CSS Wave](Simple%CSS%wave)
+- [Simple CSS Wave](Simple%20CSS%20wave)
 
 - [Animated Highlighting Text-Fill](Highlight%20Text%20Fill)
 
