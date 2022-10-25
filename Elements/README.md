@@ -23,3 +23,4 @@
 
 - [CSS3 Loading animations](CSS3%20Loading%20animations)
 
+- [morse-drummer](morse%drummer)
