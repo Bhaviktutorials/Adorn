@@ -14,7 +14,7 @@
 - [Navigation Button Styling](Navigation%20Button%20Styling)
 
 
-
+- [Simple CSS Wave](simple%CSS%Wave)
 
 - [Animated Highlighting Text-Fill](Highlight%20Text%20Fill)
 
