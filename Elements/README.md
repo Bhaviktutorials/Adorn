@@ -28,3 +28,5 @@
 - [morse-drummer](morse%drummer)
 
 - [digital-clock-with-vue-js](digital%clock%with%vue%js)
+
+- [terminal-text-effect](terminal%text%effect)
