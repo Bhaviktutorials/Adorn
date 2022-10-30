@@ -15,6 +15,8 @@
 
 - [HTML & CSS Login Form](Login%20Form/HTML%20%26%20CSS%20Login%20Form)
 
+- [Modern Login Page](Login%20Form/Modern%20Login%20Page)
+
 - [Simple CSS Wave](Simple%20CSS%20wave)
 
 - [Animated Highlighting Text-Fill](Highlight%20Text%20Fill)
