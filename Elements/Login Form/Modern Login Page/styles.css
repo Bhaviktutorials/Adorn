@@ -1,0 +1,535 @@
+/*
+   Website: https://destructiveburn.com/
+   Youtube: https://www.youtube.com/c/destructiveburn
+   Facebook: https://www.facebook.com/destructiveburn
+   Twitter: https://twitter.com/DestructiveBurn
+   Support My Work: https://www.paypal.com/donate?hosted_button_id=ZJGYBNSCSDFBG
+---------------------------------------------------
+Created By: DestructiveBurn
+---------------------------------------------------
+Credit:  Some slider code was used from: https://codepen.io/rokobuljan/pen/XXzqKQ
+Credit:  Wallpaper: https://wallpaperaccess.com/full/496120.jpg
+*/
+
+* {
+	margin:0 auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*Input/Select Placeholder*/
+::placeholder,.country{
+	color: #898989;
+}
+::-moz-placeholder{
+	color: #fff;
+}
+/*Scroll Bars*/
+::-webkit-scrollbar {
+	display: none;
+	overflow: hidden;
+}
+.scroll-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: 235px;
+    overflow-y: scroll;
+}
+/* Wallpaper */
+body{
+    background:#000000 url(https://wallpaperaccess.com/full/496120.jpg) no-repeat center center fixed!important;
+    -webkit-background-size: cover!important;
+    -moz-background-size: cover!important;
+    -o-background-size: cover!important;
+    background-size: cover!important;
+}
+/*Column Blur*/
+.column {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+/* Backdrop support: Transparent and Blurred */
+@supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
+.column {
+    background-color: rgb(0 0 0 / 50%);
+    -webkit-backdrop-filter: blur(2em);
+    backdrop-filter: blur(2em);
+  }
+}
+
+/*--------------------------------------------------->
+FONT DATA
+----------------------------------------------------->
+*/
+/*FontAwesome Bootstrap Fonts*/
+@font-face {
+font-family: "FontAwesome";
+font-weight: normal;
+font-style : normal;
+       src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0");
+       src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+}
+/*FontAwesome Font Style*/
+.country-select:before,.two-step:before,.phone:before,.first:before,.last:before,.mail:before,.r-pass:before,.pass:before,.user:before,.cright:before,.logo:before {
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    font-style: normal;
+    color: #5f84f1;
+}
+/*Logo Icon*/
+.logo:before{
+    content: '\f2bd';
+}
+/*Input User Icon*/
+.user:before {
+    content: '\f007';
+}
+/*Input First Name Icon*/
+.first:before {
+    content: '\f2c1';
+}
+/*Input Last Name Icon*/
+.last:before {
+    content: '\f2c1';
+}
+/*Input Email Icon*/
+.mail:before {
+    content: '\f0e0';
+}
+/*Input Password Icon*/
+.r-pass:before,.pass:before {
+    content: '\f09c';
+}
+/*Input Phone Number Icon*/
+.phone:before {
+    content: '\f095';
+}
+/*Input 2FA Number Icon*/
+.two-step:before {
+    content: '\f084';
+}
+.country-select:before {
+    content: '\f0ac';
+}
+/*Input User/First/Last/Email/Pass Correction*/
+.country-select:before,.two-step:before,.phone:before,.first:before,.last:before,.mail:before,.r-pass:before,.pass:before,.user:before {
+    float: left;
+    clear: both;
+    margin-left: -30px;
+    line-height: 40px;
+}
+/*Footer Icon*/
+.cright:before {
+    content: '\f1f9';
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/*--------------------------------------------------->
+PAGE DATA
+----------------------------------------------------->
+*/
+/*Center Column On Page*/
+.middle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+/*Column Body*/
+.column {
+    margin: 0 auto;
+    width: 530px;
+    height: 410px;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;	
+}
+/*Column Hover*/
+.column:hover {
+    -webkit-box-shadow: 0px 0px 10px #000000;
+    -moz-box-shadow: 0px 0px 10px #000000;
+    box-shadow: 0px 0px 10px #000000;
+}
+/*Login Logo*/
+.branding-logo {
+    font-size: 50px;
+    line-height: 70px;
+    text-align: center;
+    align-content: center;
+    background: #000000;
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    border: 1px solid #151515;
+    border-radius: 10px 10px 10px 10px;
+    width: 77px;
+    height: 73px;
+    overflow: hidden;
+}
+/*Site Branding*/
+.branding-title {
+    font-family: fantasy;
+    font-size: 20px;
+    color: #bcc3c5;
+    text-align: center;
+    margin-top: 5px;
+}
+/*Input Column*/
+.input-field {
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+/*Input Column Help*/
+.input-field-help {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+/*Input Style*/
+.country,.input-field .loger {
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+    padding: 10px 10px 10px 10px;
+    background: #000000;
+    border: 1px solid #0d2637;
+}
+/*Input Shift*/
+.country-select,.input-field p{
+    margin-right: 15px;
+}
+/*Dropdown Options*/
+.country{
+	-moz-appearance: none;
+}
+/*Input Style Color*/
+.input-field .loger {
+    color: #fff;
+}
+/*Required Star*/
+.first:after,.last:after,.country-select:after,.r-pass:after,.mail:after {
+    content: " *";
+    color: red;
+    float: right;
+    margin-top: 15px;
+    margin-right: -20px;
+}
+/*Login/Signup*/
+.input-identity {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: #5679dc;
+    padding: 10px;
+}
+/*Terms Register Shift*/
+.terms-info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #7d7d7d;
+}
+/*Terms Register Links*/
+.terms-info a{
+    text-decoration: none;
+    color: #fff;
+}
+/*Terms Register Branding Text*/
+.terms-info b {
+    color: #5f84f1;
+}
+/*Terms Register Text*/
+.ter-reg {
+    color: #378435;
+}
+/*Help Column Shift*/
+.help-column {
+    text-align: left;
+}
+/*Help Title Text*/
+.help-column strong {
+    color: #ffffff;
+}
+/*Help Title Padding Text*/
+.help-column p {
+    padding-top: 10px;
+}
+/*Help Global Text*/
+.help-column li {
+    color: #9b9fa0;
+}
+/*Help Link Text*/
+.help-column a {
+    color: #5679dc;
+}
+/*Help Required Text*/
+.help-star {
+    color: #ff0000;
+    display: contents;
+}
+/*Footer Shift*/
+.login-footer {
+    margin-top: 10px;
+    color: #fff;
+}
+/*Footer Links*/
+.login-footer div a{
+    text-decoration: none;
+    color: #fff;
+}
+/*Footer Bold Spaces*/
+.login-footer div b {
+    color: #5679dc;
+}
+/*Footer Correction*/
+.login-footer div a, .login-footer div b, .login-footer div p {
+    display: contents;
+}
+/*--------------------------------------------------->
+SLIDER DATA
+----------------------------------------------------->
+*/
+/*Slider Position*/
+.login-selection {
+  position: relative;
+  overflow: hidden;
+}
+/*Slider*/
+.login-selection .slide {
+  white-space: nowrap;
+  font-size: 0;
+  transition: 0.8s;
+}
+/*Slide Columns*/
+.login-selection .slide > * {
+    font-size: 1rem;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    width: 100%;
+    background: none 50% no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+}
+/*Slider Buttons*/
+.selector-login,.selector-register,.selector-recover {
+    background-color: #063b51;
+    border-radius: 3px;
+    border: 1px solid #000000;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+/*Slider Buttons Hover*/
+.selector-login:hover,.selector-register:hover,.selector-recover:hover {
+    background-color: #313131;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+/*Slider Buttons Active*/
+.selector-login:active,.selector-register:active,.selector-recover:active {
+	position:relative;
+	top:1px;
+}
+/*Submit Button Shift*/
+.log-sub {
+    margin-top: 5px;
+}
+/*Submit Button Settings*/
+.log-sub input {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #000000;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 5px 5px 5px 5px;
+}
+/*Submit Button Settings Active*/
+.log-sub input:active {
+	position:relative;
+	top:1px;
+}
+/*Submit Button Blue*/
+.blu-b input {
+    background-color: #196c98;
+}
+/*Submit Button Green*/
+.reg-b input {
+    background-color: #025200;
+}
+/*Submit Button Red*/
+.red-b input{
+    background-color: #5f0606;
+}
+/*Slider Buttons Hover*/
+.log-sub input:hover {
+    background-color: #313131;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+/*Slider Button Shift*/
+.bsd {
+    margin-top: 10px;
+}
+/*Slider Animation*/
+#login:target ~ .slide {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#register:target ~ .slide {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#recover:target ~ .slide {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#help:target ~ .slide {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+/*--------------------------------------------------->
+RESPONSIVE DATA
+----------------------------------------------------->
+*/
+/*Media_Width*/
+@media screen and (max-width: 580px) {
+.column {
+    width: 100%;
+    height: 100%;
+}
+}
+@media screen and (max-width: 350px) {
+.first:before,.last:before,.mail:before,.pass:before,.user:before{
+	display:none;
+}
+.input-field {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.sld-selector{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.sld-selector a{
+	width:100%;
+}
+.first:after, .last:after, .country-select:after, .r-pass:after, .mail:after {
+    content: " *";
+    color: red;
+    float: right;
+    margin-top: 15px;
+    margin-right: -14px;
+}
+}
+/*--------------------------------------------------->
+ANIMATION DATA
+----------------------------------------------------->
+*/
+/*Bounce Effect*/
+.branding-logo,.columns{
+	animation-name: bounce;
+	-webkit-animation-name: bounce;	animation-duration: 1.0s;
+	-webkit-animation-duration: 1.0s;animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+	transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%;
+}
+@keyframes bounce {0% {
+	transform: translateY(0%) scaleY(0.6);}60%{
+	transform: translateY(-20%) scaleY(1.1);}70%{
+		transform: translateY(0%) scaleY(0.95) scaleX(1.05);}80%{
+			transform: translateY(0%) scaleY(1.05) scaleX(1);}	90%{
+				transform: translateY(0%) scaleY(0.95) scaleX(1);}100%{
+					transform: translateY(0%) scaleY(1) scaleX(1);
+					}
+}
+@-webkit-keyframes bounce {0% {
+	-webkit-transform: translateY(0%) scaleY(0.6);}60%{
+		-webkit-transform: translateY(-100%) scaleY(1.1);}70%{
+			-webkit-transform: translateY(0%) scaleY(0.95) scaleX(1.05);}80%{
+				-webkit-transform: translateY(0%) scaleY(1.05) scaleX(1);}	90%{
+					-webkit-transform: translateY(0%) scaleY(0.95) scaleX(1);}100%{
+						-webkit-transform: translateY(0%) scaleY(1) scaleX(1);
+						}
+}
+/*PullDown Effect*/
+.sld-selector a,.log-sub input,.loger{
+	animation-name: pullDown;
+	-webkit-animation-name: pullDown;
+	animation-duration: 1.1s;
+	-webkit-animation-duration: 1.1s;
+	animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-out;
+	transform-origin: 50% 0%;
+	-ms-transform-origin: 50% 0%;
+	-webkit-transform-origin: 50% 0%;
+	outline: none;
+	margin-bottom: 20px;
+}
+@keyframes pullDown {
+0% {transform: scaleY(0.1);}40% {
+	transform: scaleY(1.02);}60% {
+		transform: scaleY(0.98);}80% {
+			transform: scaleY(1.01);}100% {
+				transform: scaleY(0.98);}80% {
+					transform: scaleY(1.01);}100% {
+						transform: scaleY(1);
+						}
+}
+@-webkit-keyframes pullDown {0% {
+	-webkit-transform: scaleY(0.1);}40% {
+		-webkit-transform: scaleY(1.02);}60% {
+			-webkit-transform: scaleY(0.98);}80% {
+				-webkit-transform: scaleY(1.01);}100% {
+					-webkit-transform: scaleY(0.98);}80% {
+						-webkit-transform: scaleY(1.01);}100% {
+							-webkit-transform: scaleY(1);
+							}
+}
+/*StretchRight Start*/
+.ani::before, .input-identity{
+	animation-name: stretchRight;
+	-webkit-animation-name: stretchRight;
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-out;
+	transform-origin: 0% 0%;
+	-ms-transform-origin: 0% 0%;
+	-webkit-transform-origin: 0% 0%;
+}
+@keyframes stretchRight {0% {
+	transform: scaleX(0.3);}40% {
+		transform: scaleX(1.02);}60% {
+			transform: scaleX(0.98);}80% {
+				transform: scaleX(1.01);}100% {
+					transform: scaleX(0.98);}80% {
+						transform: scaleX(1.01);}100% {
+							transform: scaleX(1);
+							}
+}
+@-webkit-keyframes stretchRight {0% {
+	-webkit-transform: scaleX(0.3);}40% {
+		-webkit-transform: scaleX(1.02);}60% {
+			-webkit-transform: scaleX(0.98);}80% {
+				-webkit-transform: scaleX(1.01);}100% {
+					-webkit-transform: scaleX(0.98);}80% {
+						-webkit-transform: scaleX(1.01);}100% {
+							-webkit-transform: scaleX(1);
+							}
+}
