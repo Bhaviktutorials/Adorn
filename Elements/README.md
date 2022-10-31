@@ -36,3 +36,5 @@
 - [star-wars-opening-crawl-from-1977](star%wars%opening%crawl%from%1977)
 
 - [tic-tac-toe](tic%tac%toe)
+
+- [the-frantic-run-of-the-valorous-rabbit](the%frantic%run%of%the%valorous%rabbit)
