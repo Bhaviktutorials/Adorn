@@ -34,3 +34,5 @@
 - [css3-checkbox-styles](css3%checkbox%styles)
 
 - [star-wars-opening-crawl-from-1977](star%wars%opening%crawl%from%1977)
+
+- [tic-tac-toe](tic%tac%toe)
